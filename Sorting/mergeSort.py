@@ -34,7 +34,7 @@ def mergeSort(arr):
     mS(arr, 0, len(arr)-1)
 
 
-arr = [5, 3,100, 4, 199, 2]
+arr = [5, 3, 100, 4, 199, 2]
 print("Original Array", arr)
 mergeSort(arr)
 print("Sorted Array", arr)

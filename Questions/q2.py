@@ -1,8 +1,6 @@
 class Alpha:
-    def display_alpha(self):
-        print('Welcome, Alpha')
-        x = 5
-        return x
+    def display_alpha(self, x):
+        print('Welcome, Alpha', x)
 
 
 class Beta(Alpha):
@@ -10,12 +8,12 @@ class Beta(Alpha):
         print("Welcome beta")
 
     def __init__(self):
-        self.x = super().display_alpha
+        self.display_gamma = super().display_alpha
 
     def display_gamma(self):
-        print('Welcome, Gamma', self.x)
+        print('Welcome, Gamma')
 
 
 obj = Beta()
-obj.display_beta()
-obj.display_gamma()
+# obj.display_beta()
+obj.display_gamma(8)
