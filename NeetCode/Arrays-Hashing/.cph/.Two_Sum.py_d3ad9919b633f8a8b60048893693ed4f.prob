@@ -1,0 +1,1 @@
+{"name":"Local: Two_Sum","url":"/home/abishek-as/Interview-Practice/NeetCode/Arrays-Hashing/Two_Sum.py","tests":[{"id":1742884912629,"input":"2,7,11,15\n9","output":"[0, 1]"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/abishek-as/Interview-Practice/NeetCode/Arrays-Hashing/Two_Sum.py","group":"local","local":true}

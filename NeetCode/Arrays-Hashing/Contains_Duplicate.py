@@ -27,6 +27,5 @@ class Solution:
 
 
 obj = Solution()
-nums = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
-# print(obj.containsDuplicate(nums))
-print(obj.alternateApproach(nums))
+nums = list(map(int, input().split(",")))
+print(obj.containsDuplicate(nums))

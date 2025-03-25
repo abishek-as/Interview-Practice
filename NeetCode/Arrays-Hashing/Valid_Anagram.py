@@ -49,14 +49,14 @@ class Solution:
 obj = Solution()
 
 # Test case: Valid anagram
-s = "anagram"
-t = "nagaram"
+s = input().strip()
+t = input().strip()
 
 # Call the original approach
-print("Using Hashmaps:", obj.isAnagram(s, t))  # Output: True
+print(obj.isAnagram(s, t))  # Output: True
 
-# Call the Counter approach
-print("Using Counter:", obj.isAnagramCounter(s, t))  # Output: True
+# # Call the Counter approach
+# print("Using Counter:", obj.isAnagramCounter(s, t))  # Output: True
 
-# Call the Sorted approach
-print("Using Sorted:", obj.isAnagramSorted(s, t))  # Output: True
+# # Call the Sorted approach
+# print("Using Sorted:", obj.isAnagramSorted(s, t))  # Output: True

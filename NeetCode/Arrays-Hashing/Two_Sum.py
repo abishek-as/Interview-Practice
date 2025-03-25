@@ -26,5 +26,6 @@ class Solution:
 
 
 obj = Solution()
-nums, target = [3, 2, 4], 6
+nums = list(map(int, input().split(",")))
+target = int(input())
 print(obj.twoSum(nums, target))
