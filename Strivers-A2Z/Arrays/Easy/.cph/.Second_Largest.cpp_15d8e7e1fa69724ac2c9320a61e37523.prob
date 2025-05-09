@@ -1,0 +1,1 @@
+{"name":"Local: Second_Largest","url":"/home/abishek-as/Interview-Practice/Strivers-A2Z/Arrays/Easy/Second_Largest.cpp","tests":[{"id":1745920967953,"input":"5\n2\n4\n3\n5\n6","output":"2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/abishek-as/Interview-Practice/Strivers-A2Z/Arrays/Easy/Second_Largest.cpp","group":"local","local":true}
