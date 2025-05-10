@@ -35,24 +35,25 @@ class BinaryTree:
                 i += 1
 
     # DFS Traversals
-    def dfs_preorder(self, node):
+    def dfs_preOrder(self, node):
         if not node:
             return []
         return (
-            [node.value] + self.dfs_preorder(node.left) + self.dfs_preorder(node.right)
+            [node.value] +
+            self.dfs_preOrder(node.left) + self.dfs_preOrder(node.right)
         )
 
-    def dfs_inorder(self, node):
+    def dfs_inOrder(self, node):
         if not node:
             return []
-        return self.dfs_inorder(node.left) + [node.value] + self.dfs_inorder(node.right)
+        return self.dfs_inOrder(node.left) + [node.value] + self.dfs_inOrder(node.right)
 
-    def dfs_postorder(self, node):
+    def dfs_postOrder(self, node):
         if not node:
             return []
         return (
-            self.dfs_postorder(node.left)
-            + self.dfs_postorder(node.right)
+            self.dfs_postOrder(node.left)
+            + self.dfs_postOrder(node.right)
             + [node.value]
         )
 
@@ -80,7 +81,7 @@ bt = BinaryTree()
 bt.insert_level_order(list(range(15)))  # 0 to 14
 
 # Perform Traversals
-print("DFS Preorder:", bt.dfs_preorder(bt.root))
-print("DFS Inorder:", bt.dfs_inorder(bt.root))
-print("DFS Postorder:", bt.dfs_postorder(bt.root))
+print("DFS Preorder:", bt.dfs_preOrder(bt.root))
+print("DFS Inorder:", bt.dfs_inOrder(bt.root))
+print("DFS Postorder:", bt.dfs_postOrder(bt.root))
 print("BFS:", bt.bfs())
