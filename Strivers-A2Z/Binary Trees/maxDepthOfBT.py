@@ -1,37 +1,6 @@
 from collections import deque
 from typing import Optional
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-
-def build_tree(nodes):
-    if not nodes or nodes[0] is None:
-        return None
-
-    root = TreeNode(nodes[0])
-    queue = deque([root])
-    i = 1
-
-    while queue and i < len(nodes):
-        current = queue.popleft()
-
-        if i < len(nodes) and nodes[i] is not None:
-            current.left = TreeNode(nodes[i])
-            queue.append(current.left)
-        i += 1
-
-        if i < len(nodes) and nodes[i] is not None:
-            current.right = TreeNode(nodes[i])
-            queue.append(current.right)
-        i += 1
-
-    return root
-
+from buildBT import TreeNode, build_tree
 # Your solution
 
 

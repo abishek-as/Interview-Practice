@@ -1,11 +1,5 @@
 from typing import Optional
-
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from buildBT import TreeNode, build_tree
 
 
 class Solution:
@@ -29,25 +23,6 @@ class Solution:
 
         dfs(root)
         return self.max_diameter
-
-
-def build_tree(nodes):
-    if not nodes or nodes[0] is None:
-        return None
-    root = TreeNode(nodes[0])
-    queue = [root]
-    i = 1
-    while queue and i < len(nodes):
-        current = queue.pop(0)
-        if i < len(nodes) and nodes[i] is not None:
-            current.left = TreeNode(nodes[i])
-            queue.append(current.left)
-        i += 1
-        if i < len(nodes) and nodes[i] is not None:
-            current.right = TreeNode(nodes[i])
-            queue.append(current.right)
-        i += 1
-    return root
 
 
 # Test case 1
